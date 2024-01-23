@@ -11,7 +11,7 @@ function onDeviceReady() {
 function addTask() {
     let task = prompt("Introduce tu tarea");
     if (task != null) {
-        $('ul[data-role="listview"]').append('<li>' + task + '</li>').listview('refresh');
+        $('ul[data-role="listview"]').append('<li>' + task + '<button class="editButton">Edit</button><button class="deleteButton">X</button></li>').listview('refresh');
     }
 }
 $(document).ready(function () {
