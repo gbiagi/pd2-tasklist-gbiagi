@@ -24,6 +24,23 @@
 			margin: 5px !important;
 			position: relative !important;
 		}
+
+		.list-item-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.list-item-container div {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.editButton,
+		.deleteButton {
+			margin: 0 5px;
+			font-size: 14px;
+		}
 	</style>
 	<title>Tasklist</title>
 </head>
@@ -35,14 +52,12 @@
 			<h1>Tasklist</h1>
 		</div>
 		<ul data-role="listview">
-			<li>Acabar practica tasklist</li>
+
 		</ul>
 		<div data-role="footer" data-position="fixed">
 			<h1>HOME</h1>
 		</div><!-- /footer -->
 	</div> <!-- home page -->
-
-
 
 	<script src="cordova.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script>
